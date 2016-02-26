@@ -33,7 +33,7 @@ console.log('Payload sent to receiver:', JSON.stringify(payload, null, 2), '\n')
 
 // Decrypt the payload using receiver's private key
 var decryptedMessage = privkeyreceiver.decrypt(payload.message, 'base64', 'utf8');
-// Verify the signature using federation server's public key
+// Verify the signature using sender's public key
 if (!pubkeysender.hashAndVerify('sha256', new Buffer(decryptedMessage).toString('base64'), payload.signature, 'base64')) {
   throw new Error("Invalid signature.");
 } else {
