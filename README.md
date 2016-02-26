@@ -3,6 +3,9 @@
 
 This example demonstrates the use of two key pairs to ensure confidentiality and non-repudiation throughout a message's lifecycle. The sender's payload includes the encrypted message and a signature. The sender encrypts the message to ensure no external actors can read it. Using the sender's public key, the receiver can validate the signature was generated with the sender's private key. Assuming the sender has sufficently protected their private key, the signature validate's the message's origin.
 
+Message lengths are capped at n/8 - 11 bytes, where n is the key size in bits.
+Example: 1024-bit key: 1024/8 - 11 = 117 bytes.
+
 Getting started
 ---------------
 

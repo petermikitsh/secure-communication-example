@@ -1,5 +1,5 @@
 var fs = require('fs'),
-var ursa = require('ursa');
+    ursa = require('ursa');
 
 var senderKeyPair = ursa.generatePrivateKey(Math.pow(2, 10), 65537);
 var receiverKeyPair = ursa.generatePrivateKey(Math.pow(2, 10), 65537);
