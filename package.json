@@ -1,0 +1,22 @@
+{
+  "name": "secure-communication-example",
+  "version": "0.0.0",
+  "description": "Secure communication between two parties by guaranteeing non-repudiation (via signature) and confidentiality (via encryption).",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petermikitsh/secure-communication-example.git"
+  },
+  "author": "Peter Mikitsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petermikitsh/secure-communication-example/issues"
+  },
+  "homepage": "https://github.com/petermikitsh/secure-communication-example",
+  "dependencies": {
+    "ursa": "^0.9.3"
+  }
+}
