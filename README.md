@@ -1,7 +1,7 @@
 # secure-communication-example
 ------------------------------
 
-This example demonstrates the use of two key pairs to ensure confidentiality and non-repudiation throughout the message's lifecycle. The sender's payload includes encrypts the message to ensure no external actors can read the message. The receiver can validate the signature was created using the sender's private key. Assuming the sender has sufficently protected their private key, the signature validate's the message's origin.
+This example demonstrates the use of two key pairs to ensure confidentiality and non-repudiation throughout a message's lifecycle. The sender's payload includes the encrypted message and a signature. The sender encrypts the message to ensure no external actors can read it. Using the sender's public key, the receiver can validate the signature was generated with the sender's private key. Assuming the sender has sufficently protected their private key, the signature validate's the message's origin.
 
 Getting started
 ---------------
